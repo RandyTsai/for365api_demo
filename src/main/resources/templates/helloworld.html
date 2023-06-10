@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" dir="ltr" class="" lang="en">
+<head>
+    <title>Sign in to your account</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/demo.css}">
+
+</head>
+
+<body>
+<!--    <form action="https://login.microsoftonline.com/e371e001-f207-4362-ae5b-fa104477dccd/oauth2/v2.0/authorize"-->
+<!--          id="RandyManualAccess-user"-->
+<!--          method="POST">-->
+<!--        <div>Randy Manual Access - on behalf of a user</div>-->
+<!--        <br/>-->
+<!--        <label for="client_id">Client Id:</label>-->
+<!--        <input type="text" id="client_id" name="client_id" value="3b9dd1f1-037e-4de9-824b-e1cc8bf656fa"><br><br>-->
+
+<!--        <label for="response_type">Response Type:</label>-->
+<!--        <input type="text" id="response_type" name="response_type" value="code"><br><br>-->
+
+<!--        <label for="response_mode">Response Mode:</label>-->
+<!--        <input type="text" id="response_mode" name="response_mode" value="query"><br><br>-->
+
+<!--        <label for="scope">Scope:</label>-->
+<!--        <input type="text" id="scope" name="scope" value="offline_access user.read mail.read"><br><br>-->
+
+<!--        <input type="submit" value="Submit">-->
+<!--    </form>-->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+<!--HERE IS THE "WITHOUT USER" METHOD REQUEST-->
+    <form action="https://login.microsoftonline.com/e371e001-f207-4362-ae5b-fa104477dccd/adminconsent"
+          id="RandyManualAccess-app"
+          method="GET">
+        <div>Randy Manual Access - wiout a user</div>
+        <br/>
+        <label for="client_id">Client Id:</label>
+        <input type="text" id="client_id" name="client_id" value="3b9dd1f1-037e-4de9-824b-e1cc8bf656fa"><br><br>
+
+        <label for="redirect_uri">Response Type:</label>
+        <input type="text" id="redirect_uri" name="redirect_uri" value="http://localhost:8080/response"><br><br>
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
